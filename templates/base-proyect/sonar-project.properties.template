@@ -1,0 +1,12 @@
+  sonar.projectKey={{artifactName}}
+  sonar.projectName={{artifactName}}
+  sonar.projectVersion=1.0.0
+   
+  sonar.sources=src/
+  sonar.language=js
+  
+  sonar.login=tester
+  sonar.password=tester
+  sonar.dynamicAnalysis=reuseReports
+  sonar.javascript.jstest.reportsPath=reports
+  sonar.javascript.lcov.reportPath=reports/coverage.lcov   

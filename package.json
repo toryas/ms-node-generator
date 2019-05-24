@@ -1,0 +1,30 @@
+{
+  "name": "ms-node-generator",
+  "version": "1.0.0",
+  "description": "A micorservices generator for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toryas/ms-node-generator.git"
+  },
+  "keywords": [
+    "ms",
+    "microservices",
+    "generator",
+    "node",
+    "plop"
+  ],
+  "author": "Felipe Nuñez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toryas/ms-node-generator/issues"
+  },
+  "homepage": "https://github.com/toryas/ms-node-generator#readme",
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "plop": "^2.3.0"
+  }
+}
