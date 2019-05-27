@@ -1,5 +1,5 @@
 import * as express from "express";
-import { getLogger } from "logger-bech";
+import { getLogger } from "../util/logger.util";
 
 import pkgjson from "../../../package.json";
 

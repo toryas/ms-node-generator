@@ -45,7 +45,7 @@ module.exports = function(plop) {
             if (fs.lstatSync(n).isDirectory()) {
               return true;
             }
-            let result = new RegExp("\.template$").test(n);
+            let result = new RegExp(".template$").test(n);
             console.log(!result ? "copied" : "skipped", n);
             return !result;
           };
@@ -72,6 +72,32 @@ module.exports = function(plop) {
       ];
 
       // Return the array of actions to take.
+      return actions;
+    }
+  });
+
+  plop.setGenerator("module", {
+    description: "Generate module microservice",
+    prompts: [
+      {
+        type: "input",
+        name: "moduleName",
+        message: "Enter module name"
+      }
+    ],
+    actions: data => {
+      let actions = [
+        {
+          type: "add",
+          path: pathBase + "src/modules/{{kebabCase moduleName}}/{{kebabCase moduleName}}.router.js",
+          templateFile: "templates/module/module.router.js.template"
+        },
+        {
+          type: "add",
+          path: pathBase + "src/modules/{{kebabCase moduleName}}/controllers/{{kebabCase moduleName}}.controller.js",
+          templateFile: "templates/module/controllers/module.controller.js.template"
+        }
+      ];
       return actions;
     }
   });

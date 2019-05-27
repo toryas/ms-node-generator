@@ -1,4 +1,4 @@
-import { getLogger } from "logger-bech";
+import { getLogger } from "../util/logger.util";
 
 const logger = getLogger("ConfigValidator");
 
