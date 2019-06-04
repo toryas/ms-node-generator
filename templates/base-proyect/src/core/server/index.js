@@ -1,5 +1,5 @@
 import express from "express";
-import { getLogger } from "log4js";
+import { getLogger } from "../util/logger.util";
 import helmet from "helmet";
 
 import pkj from "../../../package.json";
