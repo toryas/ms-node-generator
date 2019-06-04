@@ -1,5 +1,5 @@
 {
-  "name": "ms-node-generator",
+  "name": "artifact-node-generator",
   "version": "1.0.0",
   "description": "A micorservices generator for node",
   "main": "index.js",
@@ -27,5 +27,8 @@
     "fs-extra": "^8.0.1",
     "log4js": "^4.3.0",
     "plop": "^2.3.0"
+  },
+  "bin":{
+    "ang":"run.js"
   }
 }

@@ -1,4 +1,4 @@
-import { getLogger } from "../util/logger.util";
+import { getLogger } from "./logger.util";
 
 const logger = getLogger("ConfigValidator");
 

@@ -1,7 +1,11 @@
+//-->Import libs Here:
 import * as express from "express";
 import { getLogger } from "../util/logger.util";
 
+//-->Import Configs Here:
 import pkgjson from "../../../package.json";
+
+//-->Import Routers Here:
 
 const logger = getLogger("Router");
 
@@ -10,7 +14,7 @@ export default class Router {
     logger.info("Instanciando Router");
     this.route = express.Router();
     this.version(this.route);
-
+    this.loadModules(this.route);
     return this.route;
   }
 
@@ -20,9 +24,14 @@ export default class Router {
    */
   version(route) {
     route.get("/version", (req, res) => {
-      logger.info(req.route);
       res.status(200).json(pkgjson.version);
     });
+  }
+
+    /**
+   * Carga routers de los modulos
+   */
+  loadModules(route){
   }
   
 }
