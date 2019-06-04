@@ -25,6 +25,7 @@
   "homepage": "https://github.com/toryas/ms-node-generator#readme",
   "dependencies": {
     "fs-extra": "^8.0.1",
+    "log4js": "^4.3.0",
     "plop": "^2.3.0"
   }
 }

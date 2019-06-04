@@ -1,4 +1,4 @@
-import { getLogger } from "logger-bech";
+import { getLogger } from "log4js";
 
 import Response from "../domain/response";
 
